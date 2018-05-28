@@ -1,2 +1,2 @@
-# zyaller.github.io
-ZYaller.github.io
+# ZYaller.github.io
+Personal Website
