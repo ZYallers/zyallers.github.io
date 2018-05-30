@@ -22,6 +22,8 @@ skel.init({
 // Remove "loading" class once the page has fully loaded.
 window.onload = function () {
     document.body.className = '';
+    document.getElementById('header').removeAttribute("style");
+    document.getElementById('footer').removeAttribute("style");
 }
 
 // Prevent scrolling on touch.
