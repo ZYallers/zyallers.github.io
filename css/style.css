@@ -120,7 +120,7 @@
 		-ms-animation: overlay 1.5s 1.5s forwards;
 		animation: overlay 1.5s 1.5s forwards;
 		background-attachment: fixed, fixed;
-		background-image: url("http://ww1.sinaimg.cn/large/77461dbdgy1g9d1z229o9j2074074jrh.jpg"), url("images/overlay.svg");
+		background-image: url("images/overlay-pattern.png"), url("images/overlay.svg");
 		background-position: top left, center center;
 		background-repeat: repeat, no-repeat;
 		background-size: auto, cover;
