@@ -3,8 +3,8 @@
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
-@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
-@import url("font-awesome.min.css");
+@import url("http://fonts.useso.com/css?family=Source+Sans+Pro:300,900");
+@import url("https://cdn.staticfile.org/font-awesome/4.0.3/css/font-awesome.min.css");
 
 /* Basic */
 
@@ -86,7 +86,7 @@
 		-ms-transform: translate3d(0,0,0);
 		transform: translate3d(0,0,0);
 		background-color: #348cb2;
-		background-image: url("images/bg.jpg");
+		background-image: url("https://s2.ax1x.com/2019/11/27/QCIkqK.jpg");
 		background-position: bottom left;
 		background-repeat: repeat-x;
 		height: 100%;
