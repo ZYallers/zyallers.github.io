@@ -86,7 +86,7 @@
 		-ms-transform: translate3d(0,0,0);
 		transform: translate3d(0,0,0);
 		background-color: #348cb2;
-		background-image: url("https://i.loli.net/2019/11/27/I6M1JV9gjU83r2m.jpg");
+		background-image: url("http://ww1.sinaimg.cn/large/77461dbdgy1g9d1vfbp5cj215o0dwdm0.jpg");
 		background-position: bottom left;
 		background-repeat: repeat-x;
 		height: 100%;
@@ -120,7 +120,7 @@
 		-ms-animation: overlay 1.5s 1.5s forwards;
 		animation: overlay 1.5s 1.5s forwards;
 		background-attachment: fixed, fixed;
-		background-image: url("images/overlay-pattern.png"), url("images/overlay.svg");
+		background-image: url("http://ww1.sinaimg.cn/large/77461dbdgy1g9d1z229o9j2074074jrh.jpg"), url("images/overlay.svg");
 		background-position: top left, center center;
 		background-repeat: repeat, no-repeat;
 		background-size: auto, cover;

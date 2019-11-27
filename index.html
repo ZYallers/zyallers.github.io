@@ -8,16 +8,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0"/>
     <meta http-equiv="Page-Enter" content="revealTrans(Duration=2.0,Transition=1)"/>
     <meta http-equiv="Page-Exit" content="revealTrans(Duration=2.0,Transition=0)"/>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="css/loading.blue-multi-ringcircle.css"/>
+    <!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css"/><![endif]-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css"/><![endif]-->
     <noscript>
         <link rel="stylesheet" href="css/skel.min.css"/>
         <link rel="stylesheet" href="css/style.min.ss"/>
         <link rel="stylesheet" href="css/style-wide.css"/>
         <link rel="stylesheet" href="css/style-noscript.css"/>
     </noscript>
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
-    <link rel="stylesheet" href="css/loading.blue-multi-ringcircle.css"/>
-    <!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css"/><![endif]-->
-    <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css"/><![endif]-->
 </head>
 <body>
 <div id="loading">
@@ -52,8 +52,39 @@
     </div>
 </div>
 <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
-<script src="js/skel.min.js"></script>
-<script src="js/init.js"></script>
 <script src="https://hm.baidu.com/hm.js?286f054e3de0bdb9d78e18fe8c081f54"></script>
+<script src="js/skel.min.js"></script>
+<script>
+    // Skel.
+    skel.init({
+        reset: 'full',
+        breakpoints: {
+            'global': {range: '*', href: 'css/style.css', lockViewport: true, viewport: 'minimal-ui'},
+            'wide': {range: '-1680', href: 'css/style-wide.css'},
+            'normal': {range: '-1280', href: 'css/style-normal.css'},
+            'mobile': {range: '-640', href: 'css/style-mobile.css'},
+            'mobilep': {range: '-360', href: 'css/style-mobilep.css'}
+        }
+    });
+
+    // Events (JS).
+    // Remove "loading" class once the page has fully loaded.
+    window.onload = function () {
+        //document.body.className = '';
+        window.setTimeout(function () {
+            document.getElementById('loading').setAttribute('style', 'display: none;');
+        }, 1500);
+    };
+
+    // Prevent scrolling on touch.
+    window.ontouchmove = function () {
+        return false;
+    };
+
+    // Fix scroll position on orientation change.
+    window.onorientationchange = function () {
+        document.body.scrollTop = 0;
+    };
+</script>
 </body>
 </html>
